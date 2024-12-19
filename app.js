@@ -169,13 +169,81 @@
 //     console.log("not a PI");  
 // }
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-function isEven(element) {
+// let evenNums = numbers.filter(isEven);
+
+// console.log(evenNums);
+
+// function isEven(elements) {
+//     return elements % 2 === 0;
+// }
+
+
+// reduce() = reduce the elements of an array to a single value 
+
+// const prices = [5, 10, 20.4, 30];
+
+// const total = prices.reduce(sum);
+
+// console.log(`${total.toFixed(2)}`);
+
+// function sum(accumulator, element) {
+//   return accumulator + element;
+// }
+
+// const grades = [75, 50, 90, 80, 95];
+
+// const max = grades.reduce(getMax);
+
+// console.log(max);
+
+// function getMax(accumulator, element) {
+//     return Math.max(accumulator, element)
+// }
+
+
+// function declaration - define a reusable block of code that performs a specific task
+
+// function hello() {
+//     console.log(`Hello world`);
+// }
+
+// function expression - a way to define functions as values or variables 
+
+// we are not polluting the global namespaces with function names
+
+// const helloStudents = function() {
+//     console.log("Hello");
+    
+// }
+
+// helloStudents();
+
+// setTimeout(function(){
+//     console.log("hello world");
+    
+// }, 3000);
+
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+const squares = numbers.map(function(element){
+    return Math.pow(element, 2);
+});
+
+console.log(squares);
+
+// function square(element) {
+//     return Math.pow(element, 2);
+// }
+
+const evenNums = numbers.filter(function(element) {
     return element % 2 === 0;
-}
+});
 
-function 
+console.log(evenNums);
+
+ 
 
 
 
