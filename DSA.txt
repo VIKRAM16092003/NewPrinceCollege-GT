@@ -1,0 +1,351 @@
+c++ STL ---> Standard Template Library
+Containers, Algorithms, iterators etc
+
+Containers, Algorithms, iterators, functions (functors)
+
+Containers ---> Storage 
+Algorithms ----> Certaian logics 
+
+Pair Container ---> combination of two 
+
+conatinername<dt1, dt2> variablename
+
+pair<int, int> pr;
+pr.first = 23;
+pr.second = 45;
+pair<int, int> pr(5,6);
+ pr = {5 ,6};
+ pr.first = 23;
+ pr.second = 23;
+
+ pair<pair<int, int>, int>pr {{5,6}, 7}
+
+ Vector ---> dynamic in nature
+
+ vector = array, vector > array
+
+vector<int>vec;
+vector<int> vec(5);
+vector<int> vec(5, 1);
+vector<int> vec{1 ,2, 3, 45, 67, 7}; vec.bigin()
+
+
+vector<pair<int,int>>vecPair(4);
+
+vec.size();
+
+int size = vec.size();
+vec.resize(3);
+element access
+
+cout<< vec[2];
+
+vec.front();
+vec.back();
+cout<< vec.front();
+cout<< vec.back();
+
+modifiers 
+
+push_back(9)
+vec.push_back(7);   o(1)
+vec.push_back(4);   o(1)
+
+vec.pop_back();
+vec.pop_back();
+vec.pop_back();
+pop --> remove
+
+iterators ---> It is way to iterate containers in STL
+
+vector<int>::iterator it = vec.begin() & vec.end() & vec.rbegin() & vec.rend(); 
+
+auto it = vec.begin()
+
+for(auto it = vec.begin(); it != vec.end(); it++) {
+    
+}
+
+time complexity of vector 
+average case 
+best case
+worst case
+big o notation
+
+1) random access
+
+vec[2] --> big notation o(1) --> worst case
+middle ---> o(n) size of an array
+
+List 
+
+deque
+
+stack
+
+queue
+
+priority queue
+
+
+What is time complexity for?
+
+Time complexity --> it is the relationship between of time grows according to the inputs grows
+
+
+big notations 
+
+big no notations ----> worst case of time complexity or upper bound 
+
+big omega notaions ---> best case of time complexity or lower bound
+
+big theta notaions ---> average case of time complexity (both upper and lower bound)
+
+
+maximum time 
+o(n)
+worst case
+9
+[1 5 7 8 9]
+
+minimum time
+best case 
+o(1) - constant time 
+1
+[1 5 7 8 9]
+
+worst case + best case / 2 
+medium 
+
+
+common time complexity 
+
+o(1) - constant time 
+int sum = 0;
+sum++; 
+2
+
+o(LogN) - logarithmic
+n = 10
+log 2 10 = 4 
+
+
+o(sqrt(n))
+
+
+o(N) - linear
+n = 10 
+
+o(Nlogn) - linear arithmic
+n * log 10
+10 * 4 = 40
+o(N2) - quadratic time
+n2 ==> 10 2 ---> 100
+o(n3) - qubic
+n3 = 10^3 = 1000
+
+o(2n) - exponential 2^n = 2^10
+
+(n!) - factorial --> 10!
+
+
+
+company ----> loss
+        ----> average 
+        ----> profit 
+
+
+        Time complexity analaysis
+
+        int a, b; a = 10 b = 100
+        cin >> a >> b;
+        cout << a << " " << b;
+
+        o(1)
+
+target is 2 
+binary search  --> olog(n)
+        2) 1  2   3  4  5  
+        0 + 5 / 5 ==> middle 
+
+ n / 2        
+
+ 0 + 5 / 2
+ o + 1 / 2
+
+
+
+3) int n; // n = 
+   cin >> n;
+   cin >> c;
+   cin >> r;
+   for(i = 1; i <= n; i++) {
+    cout << i << " ";
+   }
+
+
+   5sqrt(n);
+
+
+4)  int n; // n = 5
+   cin >> n;
+   for(i = 0; i < n; i++) {
+    cout << i << " ";
+   }
+
+ 0 1 2 3 4    (2 + N)
+
+ 5)  int n; // n = 
+   cin >> n;
+   for(i = 1; i <= n; i++) {
+     for(i = 1; i <= n; i++) {
+       cout << i << " ";
+    }
+   }
+   
+Sorting Algorithms 
+
+Sorting 
+
+unsorting 
+
+9 8 12 7 6 1 2 3 
+
+1 2 3 6 7 8 9 12 ---> increasing ---> asecending 
+
+12 9 8 7 6 3 2 1  --> decreasing - decending
+
+Selection Sort 
+      j
+ i  i+1(start)     size-1(end)
+68   25   71   43   5          size = 5 
+0    1    2    5    4
+
+i     j 
+68   25   71   43   5          size = 5 
+0    1    2    5    4
+
+i         j 
+25   68   71   43   5          size = 5 
+0    1    2    5    4
+
+                          minidx = 1
+
+ i              j                  
+25   68   71   43   5          size = 5 
+0    1    2    5    4
+
+                          minidx = 1
+
+ i                  j                  
+25   68   71   43   5          size = 5 
+0    1    2    5    4
+
+                          minidx = 4 
+
+i                   j                  
+5   68   71   43    25          size = 5 
+0    1    2    5    4
+
+                          minidx = 4
+
+
+
+
+
+                                                                          
+25 < 68                 
+71 < 25
+43 < 25 
+5 < 25
+
+
+
+minIdx = 1
+
+minIdx 
+
+25 < 68 
+
+
+i            j
+68 25 71 43  5 
+                     minidx = 4;
+                        25 < 68 
+                        71 < 25
+                        43 < 25
+                        5 < 25
+
+   i     j
+5 25 71 43 68 
+0 1  2   3  4         minidx = 1
+                      25 < 71 
+                      25 < 43 
+                      25 < 68
+              
+
+      i    j
+5 25 71 43 68 
+0 1  2   3  4         minidx = 3
+                       71 < 43
+                       43 < 68
+        
+5 25 43 71 68 
+                       minidx = 4
+                       71 < 68 
+
+5 25 43 68 71 
+
+nested for loop
+
+
+for(int i = 0; i <= size-2; i++) {
+  for(int z = i + 1; z <= size-1; z++) {
+    
+  }
+}
+
+// Bubble Sort 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

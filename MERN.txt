@@ -1,0 +1,255 @@
+DSA WITH C++ + MERN STACK
+
+DSA --> 
+
+Basic Math For DSA 
+
+How Computers Work?
+
+Number System 
+
+Binary Numbers ---> 0 12
+
+Low level Language
+
+0 --> False or Off
+1 --> True or On
+
+t -> 0111
+2 -> 099
+@ --> 011
+
+a --> 001 ----> a
+
+Programming Language
+
+High level Language 
+
+ASCII
+
+    Decimal Value      Binary Value
+"He" ---> 72101 ----> 10000101 ----> "He"
+
+1) "ABCADDEE" ---> Frequency 
+
+[0, 1, 3, 5, 6]
+
+A -> 2
+B -> 1
+C -> 1
+E -> 2
+.
+.
+.
+Z -> 0
+
+DAT --> Direct Address Table ---> Array
+
+
+DSA 
+
+Arrays
+Structure
+Pointers
+Reference
+Constructors
+Parameter Passing
+classes
+Templates
+
+Basic C++ Program Concepts
+
+Advanced C++ Concepts 
+
+Math 
+
+DSA 
+
+
+Structure of C++ program 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() { 
+
+   
+
+}
+
+
+// Data types 
+
+name = collections of chracters 
+age ---> numbers
+Address ---> collections of chracters 
+5.6 ---> decimal value 
+
+integers ----> int ----> 1234
+float ---> 1.5 or 3.55
+char --> 'v' 'i'
+string -----> "vignesh12@#$"
+bool (boolean) 0 and 1 true or false
+
+// operators 
+
+Arithmetic Operators (+, -, *, /, %)
+Assigment operators (=, +=, -=, *=, /=)
+increment/decrement operators ( ++, -- )
+relational operators ( ==, !=, <, >, >=, <= )
+logical operators ( &&, ||, !)
+
+Arithmetic Operators
++ --> 5 + 5 = 10
+- --> 7 - 2 = 5
+* ---> 5 * 3 = 15
+/ ---> 10 / 5 = 2  // quotient
+% ---> 10 % 5 = 0  // remainder
+
+Assigment operators 
+a = 10;
+b = 10;
+
+a = 10;
+
+=  ---> int num = 10;
++=  --->  5+=10 --> 5 = 5 + 10 ==> 15
+-=  --->  5-=10 ---> 5 = 5 - 10 ===> 5
+*=  ---> 5*=10 ---> 5 = 5 * 10 ===> 50
+/=  ---> 10/=5 ---> 10 = 10/5 ==> 2
+
+increment/decrement Operators
+
+++ ==> 5++ 5 + 1 = 6   // post increment/ pre increment Operators  ++5
+-- ==> 5--  5 - 1 = 4  // post decrement/ pre decrement Operators  --5
+
+Relational operaters
+
+data     data
+
+== ---> (5 == 5) --> true (4 == 5) ---> false
+!= ---> (5 != 5) --> false (4 != 5) ---> true
+< 7 > 5 --> true
+> 5 < 100 --> true
+<= 
+7 <= 7 --> true 
+7 <= 10 --> true 
+>=
+100 >= 100 +--> true 
+100 >= 10 --> true 
+
+logical operators 
+&& || !
+
+&& ---> AND gate (true) (true) => true
+|| ---> OR gate  (true) (false) => True
+! ---> NOT gate  
+(!0) --> 1 (true)  - not of false we will get true
+(!1) --> 0 (false) - not of true we will get false
+
+
+(10 % 2 == 0) && (10 % 5 == 0) => true
+(10 % 2 == 0) && (10 % 3 == 0) => false
+(15 % 5 == 0) || (5 % 2 == 0) => true
+(!1) -> false 
+(!0) -> true 
+
+
+<>  -->  opening tag
+</> -->  closing tag
+<h1>Vignesh</h1>
+<img/> --> self closing tag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
