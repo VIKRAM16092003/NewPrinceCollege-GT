@@ -652,3 +652,456 @@
 // console.log(eagle.age);
 
 // console.log(eagle.flySpeed);
+
+// Destructuring - extract values from an arrays and object then assign them to varaible in convient way
+// [] = to perform destructuring
+// {} = to perform object destructuring 
+
+// ex 1
+// Assign array elements to varaible 
+
+// const colors = ["red", "green", "blue", "yellow", "pink"];
+
+
+// const [firstColor, secondColor, thirdColor, ...extraColors] = colors;
+
+// console.log(firstColor);
+// console.log(secondColor);
+// console.log(thirdColor);
+// console.log(extraColors);
+
+// ex2
+
+// Extract values from objects
+
+// const person1 = {
+    
+    // firstName: 'John',
+    // lastName: 'Doe',
+    // age: 34,
+    // job: "cook",
+// }
+// const person2 = {
+    
+//     firstName: 'ram',
+//     lastName: 'kumar',
+//     age: 31,
+// }
+
+// const {firstName, lastName, age, job="unemployed"} = person2;
+
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
+// console.log(job);
+
+// ex 3
+
+// SWAP the values of two variables
+
+// let a = 1;
+// let b = 2;
+
+// [a, b] = [b, a];
+
+// console.log(a);
+// console.log(b);
+
+
+// ex 4 
+// swap 2 elements from an array
+
+// const colors = ["red", "green", "blue", "yellow", "pink"];
+
+// [colors[0], colors[4]] = [colors[4], colors[0]];
+
+// console.log(colors);
+
+// ex 5
+
+// destructuring in function parameters 
+
+// function displayPerson({firstName, lastName, age, job}) {
+//    console.log(`name: ${firstName} ${lastName}`);
+//    console.log(`name: ${age}`);
+//    console.log(`job: ${job}`);
+   
+// }
+
+// const person1 = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     age: 34,
+//     job: "cook",
+// }
+
+// const person2 = {
+//     firstName: 'ram',
+//     lastName: 'kumar',
+//     age: 31,
+// }
+
+// displayPerson(person2);
+
+
+// setTimeout - function in js that allows us to shedule the execution of a function after an amount of the time(milliseconds)
+
+//  setTimeout(callback, delay);
+
+// function sayHello() {
+//     window.alert("hello");
+// }
+
+// setTimeout(function() {
+//     console.log("hello!!!");
+    
+// }, 3000);
+
+// setTimeout(() => console.log("helloo!!"), 3000);
+
+// clearTimeout(timeoutID)- can cancel a timeout before trigger
+
+// const timeoutId = setTimeout(() => console.log("helloo!!"), 3000);
+
+// clearTimeout(timeoutId);
+
+// let timeoutId;
+
+// function startTimer() {
+//    timeoutId = setTimeout(() => console.log("helloo!!"), 3000);
+//    console.log("Started");
+   
+// }
+
+// function clearTimer() {
+//     clearTimeout(timeoutId);
+//     console.log("CLEARED");
+    
+// }
+
+
+// synchronous - Execute line by line consecutively in a sequentail manner.
+// code that waits for an operation to complete
+
+// Asynchronous - allows multiple operations to be performed concurrenlty without waiting.
+
+// Doesn't block the execution flow and allows the program to contine.
+
+// I/O operation, network requests, data fetching
+
+// handle with : callback, promises, Async/Await
+
+
+
+
+// console.log("Task1");
+// console.log("Task2");
+// console.log("Task3");
+
+// function func1(callback) {
+//     setTimeout(() => {console.log("task1")
+//      callback()}, 4000);
+// }
+
+// function func2() {
+//     console.log("Task2");
+//     console.log("Task3");
+//     console.log("Task4");
+// }
+
+// func1(func2);
+
+
+// Error - an object that is created to represent a problem that occurs often with user input or establishing a connections 
+
+
+// NETWORK ISSEUS
+// PROMISES REJECTION
+// SECURITY ERROR
+
+// try
+// catch
+// finally
+
+// try {
+//     console.log("hello");
+// } catch(error) {
+//     console.error(error);
+// }
+// finally {
+//     // CLOSE FILES
+//     // CLOSE CONNECTIONS
+//     // RELEASE resources
+//     console.log("this always excutes");
+    
+// }
+
+// console.log("You have reach the end of the program");
+
+// try {
+//     const dividend = Number(window.prompt("Enter a dividend: "));
+//     const divisor = Number(window.prompt("Enter a divisor: "));
+    
+//     if(divisor == 0) {
+//         throw new Error("You cannot divide by zero");
+//     }
+//     if(isNaN(dividend) || isNaN(divisor)) {
+//         throw new Error("Values must be numbers");
+//     }
+
+//     const result = dividend / divisor;
+    
+//     console.log(result);
+
+// } catch(error) {
+//     console.error(error);
+// }
+
+// console.log("You have reach the end of the program");
+
+
+
+// DOM - Document Object model 
+// Object{} that represents the page you see in the web browser and provides us with an API to interact with it.
+// web browser constructs the DOM when it loads an HTML document and structure all the elements in tree-like representation.
+// Javascript can access the DOM to dynamically 
+// change the content, structure and style of style page
+
+
+// const username = "Ram Kumar";
+
+// const welcomeMsg = document.getElementById("welcome-msg");
+
+// welcomeMsg.textContent += username === "" ? `Guest` : username;
+
+// console.dir(document);
+
+// document.title = "My Website";
+// document.body.style.backgroundColor = "hsl(0, 0%, 15%)";
+
+
+// elements selectors = method used to target and manipulate HTML elements, that allows us to select one or multiple elements from the DOM (Document object model)
+
+// 1) document.getElementById()    returns element or null
+// 2) document.getElementsClassName() returns HTML Collection
+// 3) document.getElementsByTagName() returns HTML Collection
+// 4) document.querySelector()   returns first element or null
+// 5) document.querySelectorAll() returns NODELIST
+
+
+// const myHeading = document.getElementById("my-headinggg");
+
+// myHeading.style.backgroundColor =  "red";
+// myHeading.style.textAlign = "center";
+
+// console.log(myHeading);
+
+// const fruits = document.getElementsByClassName("fruits");
+
+// friuts[2].style.backgroundColor = "red";
+
+// for(let fruit of friuts) {
+//     fruit.style.backgroundColor = "red";
+// }
+
+// Array.from(fruits).forEach(fruit => {
+//     fruit.style.background = "red";
+// });
+
+// console.log(friuts);
+
+
+
+
+// const h4Elements = document.getElementsByTagName('h4');
+// const liElements = document.getElementsByTagName('li');
+
+
+// h4Elements[].style.backgroundColor = "red";
+// h4Elements[].style.backgroundColor = "red";
+
+// for(let liElement of liElements) {
+//     liElement.style.backgroundColor = "lightgreen";
+// }
+
+
+// const element = document.querySelector(".fruits");
+// const element = document.querySelector("h4");
+// const element = document.querySelector("li");
+// const element = document.querySelector("ul");
+// const element = document.querySelector("ol");
+
+// element.style.backgroundColor = "lightgreen";
+
+// console.log(element);
+
+
+// const fruits = document.querySelectorAll(".fruits");
+// const foods = document.querySelectorAll("li");
+
+// console.log(fruits);
+// console.log(food);
+
+// fruits[2].style.backgroundColor = "lightgreen";
+// foods[5].style.backgroundColor = "lightgreen";
+
+// foods.forEach(food => {
+//     food.style.backgroundColor = "lightgreen";
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DOM Navigation - the process of navigating through the structure of an HTML document using javascript
+
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibling
+// .previousElementSibling
+// .parentElement
+// .children
+
+
+// .firstElementChild
+
+// const elements1 = document.getElementById("fruits");
+
+// const firstChild = elements1.firstElementChild;
+
+// firstChild.style.backgroundColor = "lightgreen";
+
+// const elements2 = document.getElementById("veggies");
+
+// const firstChild = elements2.firstElementChild;
+
+// firstChild.style.backgroundColor = "lightgreen";
+
+// const elements3 = document.getElementById("deserts");
+
+// const firstChild = elements3.firstElementChild;
+
+// firstChild.style.backgroundColor = "lightgreen";
+
+// const ulElements = document.querySelectorAll("ul");
+
+// ulElements.forEach(ulElement => {
+//     const firstChild = ulElement.firstElementChild;
+//     firstChild.style.backgroundColor = "lightgreen";
+// })
+
+
+// .lastElementChild
+
+// const ulElements = document.querySelectorAll("ul");
+
+// ulElements.forEach(ulElement => {
+ 
+//     const lastChild = ulElement.lastElementChild;
+//     lastChild.style.backgroundColor = "lightgreen";
+
+// });
+
+// console.log(ulElements);
+
+
+
+// .nextElementSibling
+
+// const element = document.getElementById("apple");
+// const nextSibling = element.nextElementSibling;
+// nextSibling.style.backgroundColor = "lightgreen";
+
+// const element = document.getElementById("pie");
+// const nextSibling = element.nextElementSibling;
+// nextSibling.style.backgroundColor = "lightgreen";
+
+// const element = document.getElementById("foods");
+// const nextSibling = element.nextElementSibling;
+// nextSibling.style.backgroundColor = "lightgreen";
+
+// .previousElementSibling
+
+
+// const element = document.getElementById("foods");
+// const previousSibling = element.previousElementSibling;
+// previousSibling.style.backgroundColor = "lightgreen";
+
+// .parentElement
+
+// const element = document.getElementById("deserts");
+// const parent = element.parentElement;
+// console.log(parent);
+
+
+// parent.style.backgroundColor = "lightgreen";
+
+
+// .children
+
+// const element = document.getElementById("deserts");
+
+// const children = element.children;
+
+// console.log(children);
+
+// Array.from(children).forEach(child => {
+//     child.style.backgroundColor = "lightgreen";
+// })
+
+// Add and change HTML 
+
+// h1 Ex1
+
+// step 1 CREATE THE ELEMENT
+
+// const newH1 = document.createElement("h1");
+
+// // STEP 2 ADD ATTRIBUTEs/PROPERTIES
+
+// newH1.textContent = "I like veg briyani";
+// newH1.id = "myH1";
+// newH1.style.color = "red";
+// newH1.style.textAlign = "center";
+
+// Step 3 APPEND ELEMENTS TO DOM
+
+// document.body.append(newH1);
+// document.body.prepend(newH1);
+// document.getElementById("box1").appendChild(newH1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
